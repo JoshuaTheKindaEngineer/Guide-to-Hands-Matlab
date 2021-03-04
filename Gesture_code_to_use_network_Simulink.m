@@ -31,23 +31,23 @@ while ishandle(f)
 if max(score)>=0.98
       if label=='Fist'
          Out=1;
-         sim('mk3_hand_model_torue_input')
+         sim('Final_hand_model')
       elseif label=='OpenHand'
      Out=2;
-     sim('mk3_hand_model_torue_input')
+     sim('Final_hand_model')
       elseif label=='Balala'
      Out=3;
-     sim('mk3_hand_model_torue_input')
+     sim('Final_hand_model')
       elseif label=='scissors'
      Out=4;
-     sim('mk3_hand_model_torue_input')
+     sim('Final_hand_model')
       elseif label=='Swear'
      Out=5;
-     sim('mk3_hand_model_torue_input')
+     sim('Final_hand_model')
       end
 else
     Out=0;
-    set_param('mk3_hand_model_torue_input', 'SimulationCommand', 'stop');
+    set_param('Final_hand_model', 'SimulationCommand', 'stop');
         
 end
 
