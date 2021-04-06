@@ -5,3 +5,5 @@
 (3) The gesture codes can now be run that use the Gesturenet network you have just trained (and tested). The code to run the arduino gesture control , Gesture_code_to_use_network_Arduino, controls an arduino that has 5 servos connected to its data ports I specified in the code. 
 (4) To control the simulink simulated hand the code, Gesture_code_to_use_network_Simulink, is run. This code outputs a variable to the Simulink code that is used to select the inputs top the simulated hand. It also launches the Simulink model (Final_hand_model) and runs it everytime the if loop's conditions are met. 
 (5) The final code, Gesture_code_to_use_network_Both, produces both the arduino robotic hand control and simulink simulated hand control simultaneously.  
+Add ons required in MATLAB:
+Parallel Computing Toolbox, Deep Learning Toolbox, Image Processing Toolbox, Computer Vision Toolbox, Deep Learning HDL Toolbox, Parallel Computing Toolbox to use the GPU as well as the CPU to train the network.
