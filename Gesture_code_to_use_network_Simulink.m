@@ -41,7 +41,7 @@ if max(score)>=0.98
       elseif label=='scissors'
      Out=4;
      sim('Final_hand_model')
-      elseif label=='Swear'
+      elseif label=='Rocking'
      Out=5;
      sim('Final_hand_model')
       end
