@@ -31,4 +31,3 @@ for i=1:numel(idxWrong)
     imshow(readimage(GestureTest,idx))
     title(GestureTest.Labels(idx))
 end
-numel(idxWrong)
