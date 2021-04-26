@@ -14,10 +14,10 @@ TestPred=classify(Gesturenet,GestureTest);
 %the labels of each image tested.
 TestAct=GestureTest.Labels;
 %NumCorrect gives the total correct predictions
-NumCorrect=nnz(TestPred==TestAct);
+NumCorrect=nnz(TestPred==TestAct)
 %FractionCorrect gives the accuracy of the custom network. Numel works out 
 %total number of images used for testing predictions
-FractionCorrect=NumCorrect/numel(TestPred);
+FractionCorrect=NumCorrect/numel(TestPred)
 %Confusion chart gives a graphical representation of where the errors 
 %occured (by class) so that you can find which classes are less 
 %accurate/anomalous. This chart compares true values to predictions
