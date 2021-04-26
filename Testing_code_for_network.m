@@ -10,7 +10,6 @@ TestPred=classify(Gesturenet,GestureTest);
 %%
 %Performance evaluation
 %Used to influence changes to be made to netwrok to improve accuracy
-plot(info.TrainingLoss)
 %TestAct is the actual gesture present in the test image, found by reading 
 %the labels of each image tested.
 TestAct=GestureTest.Labels;
