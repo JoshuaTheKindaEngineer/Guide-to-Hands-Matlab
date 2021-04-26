@@ -31,5 +31,5 @@ for i=1:numel(idxWrong)
     idx=idxWrong(i);
     imshow(readimage(GestureTest,idx))
     title(GestureTest.Labels(idx))
-    
 end
+numel(idxWrong)
