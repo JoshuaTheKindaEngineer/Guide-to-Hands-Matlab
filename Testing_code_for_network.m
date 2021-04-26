@@ -25,9 +25,11 @@ confusionchart(GestureTest.Labels,TestPred)
 %This code allows me to find images that were not predicted correctly so
 %that I can check whether the failed prediction is actually due to an issue
 %with the test image
+i=1
 idxWrong=find(TestPred~=TestAct);
 for i=1:numel(idxWrong)
     idx=idxWrong(i);
     imshow(readimage(GestureTest,idx))
     title(GestureTest.Labels(idx))
+    i=i+1
 end
