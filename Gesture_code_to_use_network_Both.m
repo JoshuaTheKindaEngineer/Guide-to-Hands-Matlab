@@ -38,7 +38,7 @@ while ishandle(f)
     title({char(label), num2str(max(score),2)});
     drawnow
 if max(score)>=0.98
-      if label=='Fist'
+      if label=='Gesture 1'
          writePosition(S1,1)
          writePosition(S2,1)
          writePosition(S3,1)
@@ -46,7 +46,7 @@ if max(score)>=0.98
          writePosition(S5,1)
           Out=1;
          sim('Final_Simulink_Hand')
-      elseif label=='OpenHand'
+      elseif label=='Gesture 2'
          writePosition(S1,0)
          writePosition(S2,0)
          writePosition(S3,0)
@@ -54,7 +54,7 @@ if max(score)>=0.98
          writePosition(S5,0)
          Out=2;
      sim('Final_Simulink_Hand')
-      elseif label=='Balala'
+      elseif label=='Gesture 3'
         Out=3;
      sim('Final_Simulink_Hand')
           for i=1:5
@@ -80,7 +80,7 @@ if max(score)>=0.98
          pause(0.1)
          i=i+1
         end
-      elseif label=='scissors'
+      elseif label=='Gesture 4'
          writePosition(S1,1)
          writePosition(S2,0)
          writePosition(S3,0)
@@ -88,7 +88,7 @@ if max(score)>=0.98
          writePosition(S5,1)
          Out=4;
      sim('Final_Simulink_Hand')
-      elseif label=='Rocking'
+      elseif label=='Gesture 5'
          writePosition(S1,0)
          writePosition(S2,0)
          writePosition(S3,1)
