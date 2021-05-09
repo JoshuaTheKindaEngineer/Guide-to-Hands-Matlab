@@ -29,19 +29,19 @@ while ishandle(f)
     title({char(label), num2str(max(score),2)});
     drawnow
 if max(score)>=0.98
-      if label=='Fist'
+      if label=='Gesture 1'
          Out=1;
          sim('Final_hand_model')
-      elseif label=='OpenHand'
+      elseif label=='Gesture 2'
      Out=2;
      sim('Final_hand_model')
-      elseif label=='Balala'
+      elseif label=='Gesture 3'
      Out=3;
      sim('Final_hand_model')
-      elseif label=='scissors'
+      elseif label=='Gesture 4'
      Out=4;
      sim('Final_hand_model')
-      elseif label=='Rocking'
+      elseif label=='Gesture 5'
      Out=5;
      sim('Final_hand_model')
       end
