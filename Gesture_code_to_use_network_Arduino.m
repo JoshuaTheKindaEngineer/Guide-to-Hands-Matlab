@@ -84,11 +84,11 @@ if max(score)>=0.98
          i=i+1
           end
       elseif label=='Gesture 4'
-         writePosition(S1,0)
-         writePosition(S2,1)
-         writePosition(S3,1)
-         writePosition(S4,0)
-         writePosition(S5,0)
+         writePosition(S1,1)
+         writePosition(S2,0)
+         writePosition(S3,0)
+         writePosition(S4,1)
+         writePosition(S5,1)
       elseif label=='Gesture 5'
          writePosition(S1,0)
          writePosition(S2,0)
