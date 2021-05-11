@@ -31,23 +31,23 @@ while ishandle(f)
 if max(score)>=0.98
       if label=='Gesture 1'
          Out=1;
-         sim('Final_hand_model')
+         sim('Final_Simulink_Hand')
       elseif label=='Gesture 2'
      Out=2;
-     sim('Final_hand_model')
+     sim('Final_Simulink_Hand')
       elseif label=='Gesture 3'
      Out=3;
-     sim('Final_hand_model')
+     sim('Final_Simulink_Hand')
       elseif label=='Gesture 4'
      Out=4;
-     sim('Final_hand_model')
+     sim('Final_Simulink_Hand')
       elseif label=='Gesture 5'
      Out=5;
-     sim('Final_hand_model')
+     sim('Final_Simulink_Hand')
       end
 else
     Out=0;
-    set_param('Final_hand_model', 'SimulationCommand', 'stop');
+    set_param('Final_Simulink_Hand', 'SimulationCommand', 'stop');
         
 end
 
